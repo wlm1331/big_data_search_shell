@@ -1,0 +1,123 @@
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.DailyRollingFileAppender.
+
+Logging initialized using configuration in file:/etc/hive/2.5.3.0-37/0/hive-log4j.properties
+OK
+Time taken: 0.243 seconds
+Added [/home/wangliming/big_data_search_w/udf/TlHadoopCore-jar-with-dependencies.jar] to class path
+Added resources: [/home/wangliming/big_data_search_w/udf/TlHadoopCore-jar-with-dependencies.jar]
+OK
+Time taken: 0.011 seconds
+FAILED: SemanticException [Error 10001]: Line 3:23 Table not found 'weibo_json'
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.DailyRollingFileAppender.
+
+Logging initialized using configuration in file:/etc/hive/2.5.3.0-37/0/hive-log4j.properties
+OK
+Time taken: 0.242 seconds
+Added [/home/wangliming/big_data_search_w/udf/TlHadoopCore-jar-with-dependencies.jar] to class path
+Added resources: [/home/wangliming/big_data_search_w/udf/TlHadoopCore-jar-with-dependencies.jar]
+OK
+Time taken: 0.01 seconds
+Query ID = wangliming_20181212154606_a16faf94-075d-4a2b-b911-e9a7db93e3e8
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Defaulting to jobconf value of: 50
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+java.lang.RuntimeException: com.tianliangedu.hive.partitioner.TianLiangHivePartitioner
+	at org.apache.hadoop.hive.ql.exec.mr.ExecDriver.execute(ExecDriver.java:249)
+	at org.apache.hadoop.hive.ql.exec.mr.MapRedTask.execute(MapRedTask.java:137)
+	at org.apache.hadoop.hive.ql.exec.Task.executeTask(Task.java:160)
+	at org.apache.hadoop.hive.ql.exec.TaskRunner.runSequential(TaskRunner.java:89)
+	at org.apache.hadoop.hive.ql.Driver.launchTask(Driver.java:1745)
+	at org.apache.hadoop.hive.ql.Driver.execute(Driver.java:1491)
+	at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1289)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1156)
+	at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1146)
+	at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:217)
+	at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:169)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:380)
+	at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:315)
+	at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:712)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:685)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:625)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:233)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:148)
+Caused by: java.lang.ClassNotFoundException: com.tianliangedu.hive.partitioner.TianLiangHivePartitioner
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at org.apache.hadoop.hive.common.JavaUtils.loadClass(JavaUtils.java:79)
+	at org.apache.hadoop.hive.common.JavaUtils.loadClass(JavaUtils.java:75)
+	at org.apache.hadoop.hive.ql.exec.mr.ExecDriver.execute(ExecDriver.java:247)
+	... 21 more
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.mr.MapRedTask
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.DailyRollingFileAppender.
+
+Logging initialized using configuration in file:/etc/hive/2.5.3.0-37/0/hive-log4j.properties
+OK
+Time taken: 0.245 seconds
+Added [/home/wangliming/big_data_search_w/udf/TlHadoopCore-jar-with-dependencies.jar] to class path
+Added resources: [/home/wangliming/big_data_search_w/udf/TlHadoopCore-jar-with-dependencies.jar]
+OK
+Time taken: 0.01 seconds
+Query ID = wangliming_20181212154824_56b7a89c-daba-4f4c-8b76-8164cf39102c
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Defaulting to jobconf value of: 50
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1543589162810_0614, Tracking URL = http://sc-slave1:8088/proxy/application_1543589162810_0614/
+Kill Command = /usr/hdp/2.5.3.0-37/hadoop/bin/hadoop job  -kill job_1543589162810_0614
+Hadoop job information for Stage-1: number of mappers: 4; number of reducers: 50
+2018-12-12 15:48:33,387 Stage-1 map = 0%,  reduce = 0%
+2018-12-12 15:48:51,276 Stage-1 map = 25%,  reduce = 0%, Cumulative CPU 70.35 sec
+2018-12-12 15:49:07,955 Stage-1 map = 42%,  reduce = 0%, Cumulative CPU 130.18 sec
+2018-12-12 15:49:10,037 Stage-1 map = 50%,  reduce = 0%, Cumulative CPU 131.91 sec
+2018-12-12 15:49:11,074 Stage-1 map = 92%,  reduce = 0%, Cumulative CPU 138.37 sec
+2018-12-12 15:49:12,113 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 138.9 sec
+2018-12-12 15:49:28,104 Stage-1 map = 100%,  reduce = 3%, Cumulative CPU 150.91 sec
+2018-12-12 15:49:29,996 Stage-1 map = 100%,  reduce = 15%, Cumulative CPU 215.72 sec
+2018-12-12 15:49:31,469 Stage-1 map = 100%,  reduce = 20%, Cumulative CPU 253.87 sec
+2018-12-12 15:49:33,217 Stage-1 map = 100%,  reduce = 28%, Cumulative CPU 342.02 sec
+2018-12-12 15:49:35,147 Stage-1 map = 100%,  reduce = 39%, Cumulative CPU 383.4 sec
+2018-12-12 15:49:36,655 Stage-1 map = 100%,  reduce = 50%, Cumulative CPU 463.31 sec
+2018-12-12 15:49:38,060 Stage-1 map = 100%,  reduce = 57%, Cumulative CPU 519.46 sec
+2018-12-12 15:49:39,245 Stage-1 map = 100%,  reduce = 65%, Cumulative CPU 585.67 sec
+2018-12-12 15:49:40,515 Stage-1 map = 100%,  reduce = 69%, Cumulative CPU 621.91 sec
+2018-12-12 15:49:41,711 Stage-1 map = 100%,  reduce = 74%, Cumulative CPU 681.27 sec
+2018-12-12 15:49:42,901 Stage-1 map = 100%,  reduce = 77%, Cumulative CPU 711.55 sec
+2018-12-12 15:49:44,045 Stage-1 map = 100%,  reduce = 85%, Cumulative CPU 744.36 sec
+2018-12-12 15:49:45,111 Stage-1 map = 100%,  reduce = 89%, Cumulative CPU 766.71 sec
+2018-12-12 15:49:46,171 Stage-1 map = 100%,  reduce = 93%, Cumulative CPU 781.26 sec
+2018-12-12 15:49:47,253 Stage-1 map = 100%,  reduce = 96%, Cumulative CPU 791.41 sec
+2018-12-12 15:49:48,305 Stage-1 map = 100%,  reduce = 99%, Cumulative CPU 800.34 sec
+2018-12-12 15:49:49,375 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 803.87 sec
+MapReduce Total cumulative CPU time: 13 minutes 23 seconds 870 msec
+Ended Job = job_1543589162810_0614
+Loading data to table wangliming.weibo_json partition (week_seq=null)
+	 Time taken to load dynamic partitions: 0.346 seconds
+	Loading partition {week_seq=week1}
+	 Time taken for adding to write entity : 1
+Partition wangliming.weibo_json{week_seq=week1} stats: [numFiles=50, numRows=4790110, totalSize=462019533, rawDataSize=1345104889]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 4  Reduce: 50   Cumulative CPU: 803.87 sec   HDFS Read: 358507406 HDFS Write: 462024583 SUCCESS
+Total MapReduce CPU Time Spent: 13 minutes 23 seconds 870 msec
+OK
+Time taken: 87.545 seconds
